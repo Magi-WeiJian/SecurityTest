@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mobile Security</string>
+    <string name="tv_version">version:</string>
+    <string name="tv_progress">下载进度:</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
