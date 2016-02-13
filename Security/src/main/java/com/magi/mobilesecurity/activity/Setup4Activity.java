@@ -1,26 +1,31 @@
 package com.magi.mobilesecurity.activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.magi.mobilesecurity.R;
 
-public class Setup2Activity extends AppCompatActivity {
+public class Setup4Activity extends AppCompatActivity {
+
+    private SharedPreferences mSpref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setup2);
+        setContentView(R.layout.activity_setup4);
+        mSpref = getSharedPreferences("config", MODE_PRIVATE);
     }
 
     public void next(View view) {
-        startActivity(new Intent(this, Setup3Activity.class));
+        startActivity(new Intent(this, LostFindActivity.class));
         finish();
+        mSpref.edit().putBoolean("configed", true).apply();
     }
     public void previous(View view) {
-        startActivity(new Intent(this, Setup1Activity.class));
+        startActivity(new Intent(this, Setup3Activity.class));
         finish();
     }
 }

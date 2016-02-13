@@ -7,15 +7,19 @@ import android.view.View;
 
 import com.magi.mobilesecurity.R;
 
-public class Setup1Activity extends AppCompatActivity {
+public class Setup3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setup1);
+        setContentView(R.layout.activity_setup3);
     }
 
-    public void next(View view){
+    public void next(View view) {
+        startActivity(new Intent(this, Setup4Activity.class));
+        finish();
+    }
+    public void previous(View view) {
         startActivity(new Intent(this, Setup2Activity.class));
         finish();
     }
