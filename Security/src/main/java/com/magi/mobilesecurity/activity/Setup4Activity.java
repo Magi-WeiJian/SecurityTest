@@ -22,10 +22,12 @@ public class Setup4Activity extends AppCompatActivity {
     public void next(View view) {
         startActivity(new Intent(this, LostFindActivity.class));
         finish();
+        overridePendingTransition(R.transition.tran_in, R.transition.tran_out);
         mSpref.edit().putBoolean("configed", true).apply();
     }
     public void previous(View view) {
         startActivity(new Intent(this, Setup3Activity.class));
         finish();
+        overridePendingTransition(R.transition.tran_previous_in, R.transition.tran_previous_out);
     }
 }

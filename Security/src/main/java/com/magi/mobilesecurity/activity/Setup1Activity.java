@@ -18,5 +18,8 @@ public class Setup1Activity extends AppCompatActivity {
     public void next(View view){
         startActivity(new Intent(this, Setup2Activity.class));
         finish();
+
+        //两个界面切换的动画
+        overridePendingTransition(R.transition.tran_in, R.transition.tran_out);
     }
 }
