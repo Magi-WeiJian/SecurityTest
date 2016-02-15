@@ -13,6 +13,7 @@ public class Setup1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup1);
+
     }
 
     public void next(View view){
