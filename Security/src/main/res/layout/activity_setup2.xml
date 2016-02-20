@@ -20,8 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         magi:Setting_title="点击绑定SIM卡"
-        magi:Setting_desc_on="SIM卡没有绑定"
-        magi:Setting_desc_off="SIM卡已经绑定" />
+        magi:Setting_desc_on="SIM卡已经绑定"
+        magi:Setting_desc_off="SIM卡没有绑定" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
