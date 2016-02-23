@@ -16,12 +16,15 @@
         android:text="报警短信会发送给安全号码"/>
 
     <EditText
+        android:id="@+id/et_phonenumber"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="phone"
         android:hint="请输入或者选择安全号码"/>
 
     <Button
+        android:onClick="choose_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="请选择联系人"/>

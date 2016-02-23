@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.magi.mobilesecurity.R;
+import com.magi.mobilesecurity.utils.ToastUtils;
 import com.magi.mobilesecurity.view.SettingItemView;
 
 
@@ -49,6 +50,11 @@ public class Setup2Activity extends BaseSetupActivity {
 
     @Override
     public void showNextPage() {
+        String simSerialNumber = mSpref.getString("simSerialNumber", null);
+        if (TextUtils.isEmpty(simSerialNumber)) {
+            ToastUtils.showToast(this, "必须绑定SIM卡");
+            return;
+        }
         startActivity(new Intent(this, Setup3Activity.class));
         finish();
         //两个界面切换的动画
