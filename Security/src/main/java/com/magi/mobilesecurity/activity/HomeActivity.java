@@ -22,6 +22,7 @@ import com.magi.mobilesecurity.utils.MD5Utils;
 
 public class HomeActivity extends AppCompatActivity {
 
+    private final int SAFE = 0, CALLMAGSAFE = 1, APPS = 2, TASKMANAGER = 3, NETMANAGER = 4, TROJAN = 5, SYSOPTIMIZE = 6, TOOLS = 7, SETTINGS = 8;
     private String[] mTvIcon = new String[]{"手机防盗", "通讯卫士", "软件管理", "进程管理", "流量监控", "手机杀毒", "缓存清理", "高级工具", "设置中心"};
     private int[] mPics = new int[]{R.mipmap.home_safe, R.mipmap.home_callmsgsafe, R.mipmap.home_apps,
             R.mipmap.home_taskmanager, R.mipmap.home_netmanager, R.mipmap.home_trojan,
@@ -40,10 +41,10 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
-                    case 0:
+                    case SAFE:
                         showPasswordDialog();
                         break;
-                    case 8:
+                    case SETTINGS:
                         startActivity(new Intent(HomeActivity.this, SettingActivity.class));
                         break;
                 }

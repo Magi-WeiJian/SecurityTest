@@ -44,6 +44,7 @@ public class Setup4Activity extends BaseSetupActivity {
         finish();
         //两个界面切换的动画
         overridePendingTransition(R.transition.tran_in, R.transition.tran_out);
+        mSpref.edit().putBoolean("configed", true).apply();
     }
 
     @Override
