@@ -19,7 +19,7 @@ public class SmsReceiver extends BroadcastReceiver {
         Object[] objects = (Object[]) intent.getExtras().get("pdus");
         for (Object puds : objects) {
             SmsMessage message = SmsMessage.createFromPdu((byte[]) puds);
-            String originatingAddress = message.getDisplayOriginatingAddress(); //短信来源号码
+//            String originatingAddress = message.getDisplayOriginatingAddress(); //短信来源号码
             String messageBody = message.getDisplayMessageBody(); //短信内容
 
             //Log.i("TAG", "onReceive: " + originatingAddress + ":" + messageBody);
