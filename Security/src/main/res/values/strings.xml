@@ -2,6 +2,8 @@
     <string name="app_name">Mobile Security</string>
     <string name="tv_version">version:</string>
     <string name="tv_progress">下载进度:</string>
+    <string name="sample_device_admin_description">有了手机卫士管理器,可以一键锁屏,清除数据等等</string>
+    <string name="sample_device_admin">手机卫士管理器</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>

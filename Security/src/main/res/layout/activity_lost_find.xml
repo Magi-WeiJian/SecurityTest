@@ -97,6 +97,8 @@
         android:gravity="center"
         android:text="远程删除数据:#*wipedata*#"/>
     <TextView
+        android:onClick="setLockPassword"
+        android:clickable="true"
         style="@style/ContentStyle"
         android:drawableLeft="@android:drawable/star_big_on"
         android:gravity="center"
